@@ -31,6 +31,19 @@ public class Aplication {
         System.out.println("Account data: ");
         System.out.println(account);
 
+        System.out.println();
+        System.out.print("Enter a deposit value: ");
+        double depositValue = sc.nextDouble();
+        account.deposit(depositValue);
+        System.out.println("Updated account data:");
+        System.out.println(account);
+
+        System.out.println();
+        System.out.print("Enter a withdraw value: ");
+        double withdrawValue = sc.nextDouble();
+        account.withdraw(withdrawValue);
+        System.out.println("Updated account data:");
+        System.out.println(account);
 
         sc.close();
     }
